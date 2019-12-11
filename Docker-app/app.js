@@ -17,4 +17,8 @@ app.use(cors())
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.listen(3000,(req,res)=>{
+    console.log("server run in Port:",3000);
+  });
+
 module.exports = app;
